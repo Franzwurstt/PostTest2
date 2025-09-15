@@ -31,7 +31,8 @@ Model (KomponenService.java) untuk mengelola logika CRUD & penyimpanan data.
 Model (Komponen.java) untuk merepresentasikan data komponen.
 
 2. Penjelasan Alur Program
-a. Main.java (Titik Awal Program)
+
+-Main.java (Titik Awal Program)
 
 Program dimulai dari class Main.
 Di sini terdapat menu utama dan loop untuk terus menerima input user sampai memilih keluar.
@@ -61,7 +62,7 @@ Menampilkan pilihan menu.
 Membaca input user dengan Scanner.
 Meneruskan input tersebut ke KomponenService.
 
-b. Pilihan Menu di Main
+-Pilihan Menu di Main
 
 Setiap input user akan dieksekusi melalui switch case.
 
@@ -86,7 +87,6 @@ case 2:
     service.lihatKomponen();
     break;
 
-
 Memanggil lihatKomponen() untuk menampilkan daftar yang tersimpan.
 
 3. Update Komponen
@@ -106,7 +106,6 @@ case 3:
     service.updateKomponen(update - 1, new Komponen(namabaru, hargabaru, kategoribaru));
     break;
 
-
 Mengganti data lama dengan objek baru.
 
 4. Hapus Komponen
@@ -117,14 +116,12 @@ case 4:
     service.hapusKomponen(hapus - 1);
     break;
 
-
 Menghapus data dari daftar berdasarkan index.
 
 5. Hitung Total Harga
 case 5:
     service.hitungTotalHarga();
     break;
-
 
 Menjumlahkan seluruh harga komponen.
 
@@ -133,17 +130,15 @@ case 6:
     System.out.println("Babay");
     break;
 
-
 Mengakhiri loop, program berhenti.
 
-c. KomponenService.java (Pengelola Data/Logika CRUD)
+Class KomponenService.java 
 
 Semua logika CRUD ditangani di sini. Data disimpan di ArrayList.
 
 private ArrayList<Komponen> daftarKomponen = new ArrayList<>();
 
-
-Tambah Data
+Untuk Tambah Data
 
 public void tambahKomponen(Komponen k) {
     daftarKomponen.add(k);
@@ -151,7 +146,7 @@ public void tambahKomponen(Komponen k) {
 }
 
 
-Lihat Data
+Untuk Lihat Data
 
 public void lihatKomponen() {
     if (daftarKomponen.isEmpty()) {
@@ -167,7 +162,7 @@ public void lihatKomponen() {
 }
 
 
-Update Data
+Untuk Update Data
 
 public void updateKomponen(int index, Komponen k) {
     if (index >= 0 && index < daftarKomponen.size()) {
@@ -179,7 +174,7 @@ public void updateKomponen(int index, Komponen k) {
 }
 
 
-Hapus Data
+Untuk Hapus Data
 
 public void hapusKomponen(int index) {
     if (index >= 0 && index < daftarKomponen.size()) {
@@ -191,7 +186,7 @@ public void hapusKomponen(int index) {
 }
 
 
-Hitung Total Harga
+Untuk Hitung Total Harga
 
 public void hitungTotalHarga() {
     double total = 0;
@@ -201,7 +196,7 @@ public void hitungTotalHarga() {
     System.out.println("Total harga semua komponen: Rp" + String.format("%,.2f", total));
 }
 
-d. Komponen.java (Model / Struktur Data)
+Komponen.java (Model / Struktur Data)
 
 Merepresentasikan komponen dengan property dan constructor.
 
