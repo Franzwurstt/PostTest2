@@ -26,11 +26,9 @@ Hitung Total: menjumlahkan semua harga komponen
 
 Struktur program dibagi menjadi 3 bagian:
 
-Main (Main.java) → menjalankan menu utama & menerima input user.
-
-Service (KomponenService.java) → mengelola logika CRUD & penyimpanan data.
-
-Model (Komponen.java) → merepresentasikan data komponen.
+Main (Main.java) untuk menjalankan menu utama & menerima input user.
+Model (KomponenService.java) untuk mengelola logika CRUD & penyimpanan data.
+Model (Komponen.java) untuk merepresentasikan data komponen.
 
 2. Penjelasan Alur Program
 a. Main.java (Titik Awal Program)
@@ -57,12 +55,10 @@ public static void main(String[] args) {
         input.nextLine();
 
 
-➡ Peran Main:
+Peran Main:
 
 Menampilkan pilihan menu.
-
 Membaca input user dengan Scanner.
-
 Meneruskan input tersebut ke KomponenService.
 
 b. Pilihan Menu di Main
@@ -83,7 +79,7 @@ case 1:
     break;
 
 
-➡ Membuat objek baru Komponen, lalu memanggil tambahKomponen() dari KomponenService.
+Membuat objek baru Komponen, lalu memanggil tambahKomponen() dari KomponenService.
 
 2. Lihat Komponen
 case 2:
@@ -91,7 +87,7 @@ case 2:
     break;
 
 
-➡ Memanggil lihatKomponen() untuk menampilkan daftar yang tersimpan.
+Memanggil lihatKomponen() untuk menampilkan daftar yang tersimpan.
 
 3. Update Komponen
 case 3:
@@ -111,7 +107,7 @@ case 3:
     break;
 
 
-➡ Mengganti data lama dengan objek baru.
+Mengganti data lama dengan objek baru.
 
 4. Hapus Komponen
 case 4:
@@ -122,7 +118,7 @@ case 4:
     break;
 
 
-➡ Menghapus data dari daftar berdasarkan index.
+Menghapus data dari daftar berdasarkan index.
 
 5. Hitung Total Harga
 case 5:
@@ -130,7 +126,7 @@ case 5:
     break;
 
 
-➡ Menjumlahkan seluruh harga komponen.
+Menjumlahkan seluruh harga komponen.
 
 6. Keluar
 case 6:
@@ -138,7 +134,7 @@ case 6:
     break;
 
 
-➡ Mengakhiri loop, program berhenti.
+Mengakhiri loop, program berhenti.
 
 c. KomponenService.java (Pengelola Data/Logika CRUD)
 
@@ -227,17 +223,17 @@ public class Komponen {
 }
 
 
-➡ Setiap kali user menambah data, objek baru Komponen dibuat dari class ini.
+Setiap kali user menambah data, objek baru Komponen dibuat dari class ini.
 
 3. Simulasi Jalannya Program
 
-User pilih menu 1 → Tambah → memasukkan "RAM, 500000, Hardware".
-→ Main membuat objek → KomponenService menyimpannya di ArrayList.
+User pilih menu 1  Tambah  memasukkan "RAM, 500000, Hardware".
+Main membuat objek  KomponenService menyimpannya di ArrayList.
 
-User pilih menu 2 → Lihat → daftar menampilkan "RAM".
+User pilih menu 2  Lihat daftar menampilkan "RAM".
 
-User pilih menu 3 → Update → ubah RAM jadi "RAM DDR4".
+User pilih menu 3  Update ubah RAM jadi "RAM DDR4".
 
-User pilih menu 5 → Hitung Total → tampil "Rp 500.000".
+User pilih menu 5  Hitung Total tampil "Rp 500.000".
 
-User pilih menu 6 → Keluar → program selesai.
+User pilih menu 6  Keluar program selesai.
