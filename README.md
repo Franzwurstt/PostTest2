@@ -8,31 +8,15 @@ Deskripsi Program
 
 Program ini dibuat untuk orang orang seperti pemilik toko komputer, teknisi, atau orang orang yang ingin merakit komputer untuk mencatat harga dari komponen yang ingin mereka beli, sehingga mereka bisa mempertimbangkan terlebih dahulu sebelum membeli. Disini pengguna dapat menambahkan komponen baru beserta harganya, melihat daftar komponen yang sudah tersimpan, memperbarui data komponen, serta menghapus data komponen yang tidak diperlukan.
 
-
-1. Deskripsi Program
-
-Program ini adalah aplikasi berbasis Java Console yang digunakan untuk mengelola daftar harga komponen komputer.
-Fitur utama program:
-
-Create: menambahkan komponen baru
-
-Read: menampilkan daftar komponen
-
-Update: mengubah data komponen
-
-Delete: menghapus komponen
-
-Hitung Total: menjumlahkan semua harga komponen
-
-Struktur program dibagi menjadi 3 bagian:
+-Struktur program dibagi menjadi 3 bagian:
 
 Main (Main.java) untuk menjalankan menu utama & menerima input user.
 Model (KomponenService.java) untuk mengelola logika CRUD & penyimpanan data.
 Model (Komponen.java) untuk merepresentasikan data komponen.
 
-2. Penjelasan Alur Program
+-Penjelasan Alur Program
 
--Main.java (Titik Awal Program)
+Main.java (Titik Awal Program)
 
 Program dimulai dari class Main.
 Di sini terdapat menu utama dan loop untuk terus menerima input user sampai memilih keluar.
