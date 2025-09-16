@@ -149,3 +149,6 @@ Menu 5 Hitung total harga komponen.
 
 
 User pilih menu 6  Keluar program selesai.
+
+<img width="296" height="232" alt="image" src="https://github.com/user-attachments/assets/843ab6eb-750b-4e6a-b5a6-078d277d89a7" />
+
