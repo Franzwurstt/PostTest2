@@ -16,11 +16,14 @@ Program ini dibuat untuk orang orang seperti pemilik toko komputer, teknisi, ata
 
 ### Struktur program dibagi menjadi 3 bagian:
 
-Main (Main.java) untuk menjalankan menu utama & menerima input user.
+Model Class Komponen:
+Berisi struktur data/atribut. Dalam hal ini Komponen yang punya atribut nama, harga, dan kategori.
 
-Service (KomponenService.java) untuk mengelola logika CRUD & penyimpanan data.
+View Class Main: 
+Menjadi tampilan/menu yang berinteraksi dengan user. Semua input dan output terjadi di sini.
 
-Model (Komponen.java) untuk merepresentasikan data komponen.
+Controller Class KomponenService:
+Berisi logika bisnis CRUD. Main hanya memanggil method dari sini tanpa tahu bagaimana data disimpan.
 
 ## Penjelasan Alur Program
 
@@ -46,20 +49,24 @@ Setiap input user akan dieksekusi melalui switch case.
 
 Membuat objek baru Komponen, lalu memanggil tambahKomponen() dari KomponenService.
 
+
 2. Lihat Komponen
 <img width="185" height="49" alt="image" src="https://github.com/user-attachments/assets/5e390350-1f72-4ae8-bcfe-b4dbbb366157" />
 
 Memanggil lihatKomponen() untuk menampilkan daftar yang tersimpan.
+
 
 3. Update Komponen
 <img width="428" height="233" alt="image" src="https://github.com/user-attachments/assets/72d92447-e6af-42f5-8e71-5121c2a49412" />
 
 Update data lama dengan yang baru.
 
+
 4. Hapus Komponen
 <img width="428" height="100" alt="image" src="https://github.com/user-attachments/assets/1aa7549e-a68a-4c17-8528-358ef70bc99f" />
 
 Menghapus data dari daftar berdasarkan index.
+
 
 5. Hitung Total Harga
    
@@ -67,9 +74,11 @@ Menghapus data dari daftar berdasarkan index.
 
 Menjumlahkan seluruh harga komponen.
 
+
 6. Keluar
-7. 
-<img width="343" height="57" alt="image" src="https://github.com/user-attachments/assets/e0ba29fb-993a-4981-a1ef-febf70691112" />
+
+<img width="263" height="64" alt="image" src="https://github.com/user-attachments/assets/617d327e-086b-472f-a80d-2eca609361fd" />
+
 
 Mengakhiri loop, program berhenti.
 
@@ -89,11 +98,12 @@ Untuk Lihat Data
 
 Untuk Update Data
 
-<img width="356" height="107" alt="image" src="https://github.com/user-attachments/assets/f3d50ea9-0251-4330-a5bd-2587935d35c0" />
+<img width="374" height="115" alt="image" src="https://github.com/user-attachments/assets/1db5426e-d68e-4757-9d82-b182ee04447c" />
 
 Untuk Hapus Data
 
-<img width="356" height="107" alt="image" src="https://github.com/user-attachments/assets/b257b220-74cf-4be1-bbf7-bc2ae7237c7a" />
+<img width="356" height="112" alt="image" src="https://github.com/user-attachments/assets/031e817e-d9fa-417d-ba96-022672a1514e" />
+
 
 Untuk Hitung Total Harga
 
@@ -115,27 +125,25 @@ mengubah data di dalam objek
 
 Menu
 
-
-User pilih menu 1  Tambah  memasukkan "RAM, 500000, Hardware".
-Main membuat objek  KomponenService menyimpannya di ArrayList.
+Menu 1 buat list komponen
 
 <img width="280" height="197" alt="image" src="https://github.com/user-attachments/assets/6807a624-13c8-4182-9127-6130eaf22818" />
 
 
-User pilih menu 2  Lihat daftar menampilkan "RAM".
+Menu 2  Lihat daftar komponen.
 
 <img width="307" height="181" alt="image" src="https://github.com/user-attachments/assets/a511820c-7aa6-4ac1-bfd4-2ab4c5bb796c" />
 
-User pilih menu 3  Update ubah RAM jadi "RAM DDR4".
+Menu 3 Update.
 
 <img width="325" height="253" alt="image" src="https://github.com/user-attachments/assets/6f18372d-25ba-4784-bca6-4d73bbba7c76" />
 
-User pilih menu 4
+Menu 4 Hapus
 
 <img width="317" height="206" alt="image" src="https://github.com/user-attachments/assets/d233413e-3c3d-4142-b8c4-ebe313a5fdf7" />
 
 
-User pilih menu 5  Hitung Total tampil "Rp 500.000".
+Menu 5 Hitung total harga komponen.
 
 <img width="275" height="154" alt="image" src="https://github.com/user-attachments/assets/81263d89-46d8-443e-8ed8-5dd98bd7128e" />
 
