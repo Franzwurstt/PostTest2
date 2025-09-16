@@ -40,7 +40,7 @@ Menampilkan pilihan menu.
 Membaca input user dengan Scanner.
 Meneruskan input tersebut ke KomponenService.
 
-- Pilihan Menu di Main
+Pilihan Menu di Main
 
 Setiap input user akan dieksekusi melalui switch case.
 
