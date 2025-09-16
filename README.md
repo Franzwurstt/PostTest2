@@ -149,24 +149,34 @@ Menu 1 buat list komponen
 
 <img width="280" height="197" alt="image" src="https://github.com/user-attachments/assets/6807a624-13c8-4182-9127-6130eaf22818" />
 
-
+Saat memilih menu 1 (Buat List Komponen), program meminta nama, harga, dan kategori. Data Rx 5600xt 3999000 VGA lalu disimpan dan muncul pesan bahwa komponen berhasil ditambahkan.
 
 Menu 2  Lihat daftar komponen.
 
 <img width="307" height="181" alt="image" src="https://github.com/user-attachments/assets/a511820c-7aa6-4ac1-bfd4-2ab4c5bb796c" />
 
-
+Ketika memilih menu 2 (Lihat List Komponen), program menampilkan semua komponen yang tersimpan. Hasilnya ada tiga item: Ryzen 3600g, Gigabyte b350m, dan komponen baru Rx 5600xt.
 
 Menu 3 Update.
 
 <img width="325" height="253" alt="image" src="https://github.com/user-attachments/assets/6f18372d-25ba-4784-bca6-4d73bbba7c76" />
 
+Saat memilih menu 3, program menampilkan daftar komponen yang sudah ada.
+Pengguna lalu diminta memilih nomor komponen yang ingin diubah. Pada contoh ini, komponen nomor 1 (Ryzen 3600g) dipilih.
+Setelah itu, pengguna memasukkan data baru: Nama baru: Ryzen 5600g, Harga baru: 2000000, Kategori baru: CPU
 
+
+Program kemudian menampilkan pesan bahwa komponen berhasil diupdate. Artinya, data lama pada list komponen berhasil diganti dengan data yang baru.
 
 Menu 4 Hapus
 
 <img width="317" height="206" alt="image" src="https://github.com/user-attachments/assets/d233413e-3c3d-4142-b8c4-ebe313a5fdf7" />
 
+Ketika memilih menu 4, program kembali menampilkan daftar komponen yang sudah ada (termasuk hasil update sebelumnya).
+Pengguna kemudian memasukkan nomor komponen yang ingin dihapus, yaitu 1.
+Setelah konfirmasi, program menampilkan pesan "Komponen berhasil dihapus".
+
+Hasilnya, komponen pada posisi pertama (yang tadinya sudah diupdate menjadi Ryzen 5600g) dihapus dari daftar, sehingga list sekarang hanya menyisakan dua komponen lainnya.
 
 
 Menu 5 Hitung total harga komponen.
@@ -174,8 +184,20 @@ Menu 5 Hitung total harga komponen.
 <img width="275" height="154" alt="image" src="https://github.com/user-attachments/assets/81263d89-46d8-443e-8ed8-5dd98bd7128e" />
 
 
+Ketika pengguna memilih menu nomor 5, program akan menghitung total dari semua harga komponen yang ada di dalam list.
+Dari output terlihat bahwa hasil perhitungannya adalah:
+
+Total harga semua komponen: Rp6998000.0
+
+Ini berarti program berhasil menjumlahkan harga setiap komponen yang tersisa di dalam daftar. Dengan begitu, pengguna bisa langsung mengetahui berapa total biaya jika ingin membeli semua komponen tersebut.
+
 
 User pilih menu 6  Keluar program selesai.
 
 <img width="296" height="232" alt="image" src="https://github.com/user-attachments/assets/843ab6eb-750b-4e6a-b5a6-078d277d89a7" />
+
+Saat pengguna memilih menu nomor 6, program menampilkan pesan:
+
+Terima kasih, program selesai.
+
 
